@@ -11,6 +11,8 @@
 
 .list {
         list-style: none;
+        padding: 0;
+        margin: 0;
 }
 
 body {
@@ -22,6 +24,28 @@ body {
 
 h2.hidden {
         visibility: hidden;
+        height: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+}
+
+.container {
+        width: 1170px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 94px;
+        padding-bottom: 94px;
+}
+
+.container.no-padding {
+        padding-top: 0;
+        padding-bottom: 0;
+}
+
+.container.no-top-padding {
+        padding-top: 0;
 }
 
 /* Logo */
@@ -39,7 +63,11 @@ h2.hidden {
 }
 
 .logo.footer {
+        display: block;
         color: var(--primary-bg);
+        margin-bottom: 20px;
+        padding-top: 0;
+        padding-bottom: 0px;
 }
 
 .logo span {
@@ -73,10 +101,14 @@ h2.hidden {
 
 /* Buttons */
 .button {
+        display: inline-block;
         font-family: inherit;
         font-size: 16px;
         text-align: center;
         cursor: pointer;
+        text-align: center;
+        border-radius: 4px;
+        min-width: 73px;
 }
 
 .button.primary {
@@ -85,6 +117,8 @@ h2.hidden {
         font-weight: 700;
         line-height: 1.88;
         letter-spacing: 0.06em;
+        padding: 10px 32px;
+
 }
 
 .button.secondary {
@@ -93,11 +127,13 @@ h2.hidden {
         font-weight: 500;
         line-height: 1.6; 
         letter-spacing: 0.03em;
+        padding: 6px 22px;
 }
 
 .button.secondary:hover {
         color: var(--primary-bg);
         background-color: var(--accent);
+        padding: 6px 25px;
 }
 
 /* hero block */
@@ -112,6 +148,8 @@ h2.hidden {
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 30px;
         
         color: var(--primary-bg);
 }
@@ -122,6 +160,8 @@ h2.hidden {
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 50px;
 
         color:var(--title-text-color);
 }
@@ -136,6 +176,8 @@ h2.hidden {
         line-height: 1.14;
         text-transform: uppercase;
         letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 10px;
 
         color: var(--title-text-color);
 }
@@ -144,15 +186,26 @@ h2.hidden {
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 0;
 }
 
+/* Services section (list)*/
+
+
 /* Team section (list)*/
+.team img {
+        margin-bottom: 30px;
+}
+
 .team .title {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;        
         text-align: center;
         letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 10px;
 
         color: var(--title-text-color);
 }
@@ -161,6 +214,12 @@ h2.hidden {
         line-height: 1.19;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 0;
+}
+
+.team li {
+        padding-bottom: 30px;
 }
 
 /* Portfolio page: portfolio section */
@@ -168,6 +227,10 @@ h2.hidden {
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
+        margin-top: 0;
+        margin-bottom: 4px;
+        padding-left: 24px;
+        padding-right: 24px;
 
         color: var(--title-text-color);
 }
@@ -175,13 +238,32 @@ h2.hidden {
 .portfolio .text {
         line-height: 1.88;
         letter-spacing: 0.03em;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 24px;
+        padding-right: 24px;
 
         color: var(--primary-text-color);
+}
+
+.container .buttons {
+        margin-bottom: 50px;
+}
+
+.portfolio li {
+        padding-bottom: 20px;
+}
+
+.portfolio img {
+        margin-bottom: 20px;
+
 }
 
 /* Footer */
 .footer {
         background-color: var(--hero-background);
+        padding-top: 60px;
+        padding-bottom: 60px;
 }
 
 .footer .link {
