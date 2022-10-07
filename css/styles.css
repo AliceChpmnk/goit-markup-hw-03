@@ -1,0 +1,208 @@
+/* grey rgba(255, 255, 255, 0.6); */
+
+:root {
+        --primary-text-color: #757575;
+        --title-text-color: #212121;
+        --accent: #2196F3;
+        --background-accent: #F5F4FA;
+        --hero-background: #2F303A;
+        --primary-bg: #FFFFFF;
+}
+
+.list {
+        list-style: none;
+}
+
+body {
+        font-family: 'Roboto', sans-serif;
+
+        color: var(--primary-text-color);
+        background-color: var(--primary-bg);
+}
+
+h2.hidden {
+        visibility: hidden;
+}
+
+/* Logo */
+.logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+}
+
+.logo.header {
+        color: #000000;
+}
+
+.logo.footer {
+        color: var(--primary-bg);
+}
+
+.logo span {
+        color: var(--accent);
+}
+
+/* site navigation */
+.site-nav .link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        text-decoration: none;
+        letter-spacing: 0.02em;
+}
+
+.site-nav .link.menu {
+        color: var(--title-text-color);
+}
+
+.site-nav .link.contacts {
+        color: var(--primary-text-color);
+}
+
+.site-nav .link:hover, .site-nav .link:focus, .footer-contacts .link:hover, .footer-contacts .link:focus {
+        color: var(--accent);
+}
+
+.site-nav .link.current {
+        color: var(--accent);
+}
+
+/* Buttons */
+.button {
+        font-family: inherit;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+}
+
+.button.primary {
+        color:var(--primary-bg);
+        background-color: var(--accent);
+        font-weight: 700;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+}
+
+.button.secondary {
+        color: var(--title-text-color);
+        background-color: var(--background-accent);
+        font-weight: 500;
+        line-height: 1.6; 
+        letter-spacing: 0.03em;
+}
+
+.button.secondary:hover {
+        color: var(--primary-bg);
+        background-color: var(--accent);
+}
+
+/* hero block */
+.hero {
+        background: var(--hero-background);
+}
+
+.hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        
+        color: var(--primary-bg);
+}
+
+/* Sections */
+.section-title {
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color:var(--title-text-color);
+}
+
+.section-accent {
+        background: var(--background-accent);
+}
+
+/* Features section (list) */
+.features .title {
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+
+        color: var(--title-text-color);
+}
+
+.features .text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+}
+
+/* Team section (list)*/
+.team .title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;        
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: var(--title-text-color);
+}
+
+.team .text {
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+/* Portfolio page: portfolio section */
+.portfolio .title {
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+
+        color: var(--title-text-color);
+}
+
+.portfolio .text {
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+
+        color: var(--primary-text-color);
+}
+
+/* Footer */
+.footer {
+        background-color: var(--hero-background);
+}
+
+.footer .link {
+        font-size: 14px;
+        line-height: 1.71;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .address.link {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+        letter-spacing: 0.03em;
+
+        color: var(--primary-bg);
+}
+
+address {
+        font-style: normal;
+}
