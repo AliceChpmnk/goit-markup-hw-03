@@ -30,22 +30,11 @@ h2.hidden {
 }
 
 .container {
-        width: 1170px;
+        width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 94px;
-        padding-bottom: 94px;
-}
-
-.container.no-padding {
-        padding-top: 0;
-        padding-bottom: 0;
-}
-
-.container.no-top-padding {
-        padding-top: 0;
 }
 
 /* Logo */
@@ -103,6 +92,10 @@ h2.hidden {
         line-height: 1.14;
         text-decoration: none;
         letter-spacing: 0.02em;
+}
+
+.header {
+        border-bottom: 1px solid #ECECEC;
 }
 
 .header .main-nav {
@@ -194,6 +187,15 @@ h2.hidden {
         
 
 /* Sections */
+.section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+}
+
+.section.no-top-padding {
+        padding-top: 0;
+}
+
 .section-title {
         margin-top: 0;
         margin-bottom: 50px;
@@ -206,6 +208,9 @@ h2.hidden {
 }
 
 .section-accent {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
         background: var(--background-accent);
 }
 
@@ -251,10 +256,6 @@ h2.hidden {
         justify-content: space-between;
 }
 
-.team .picture {
-        margin-bottom: 30px;
-}
-
 .team .title {
         margin-top: 0;
         margin-bottom: 10px;
@@ -276,8 +277,16 @@ h2.hidden {
         letter-spacing: 0.03em;
 }
 
-.team .item {
+.team .caption {
+        padding-top: 30px;
         padding-bottom: 30px;
+}
+
+.team .picture {
+        display: block;
+}
+
+.team .item {
         width: 270px;
 }
 
@@ -300,8 +309,6 @@ h2.hidden {
 .portfolio .title {
         margin-top: 0;
         margin-bottom: 4px;
-        padding-left: 24px;
-        padding-right: 24px;
 
         color: var(--title-text-color);
         font-size: 18px;
@@ -312,8 +319,6 @@ h2.hidden {
 .portfolio .text {
         margin-top: 0;
         margin-bottom: 0;
-        padding-left: 24px;
-        padding-right: 24px;
 
         color: var(--primary-text-color);
         line-height: 1.88;
@@ -321,7 +326,6 @@ h2.hidden {
 }
 
 .portfolio .item {
-        padding-bottom: 20px;
         width: calc((100% - 60px) / 3);
         margin-right: 30px;
         margin-bottom: 30px;
@@ -335,9 +339,15 @@ h2.hidden {
         margin-bottom: 0;
 }
 
+.portfolio .caption {
+        padding: 20px 24px;
+        border-left: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+}
+
 .portfolio .picture {
         display: block;
-        margin-bottom: 20px;
 }
 
 /* Footer */
@@ -365,6 +375,10 @@ h2.hidden {
         letter-spacing: 0.03em;
 
         color: var(--primary-bg);
+}
+
+.footer .item:not(:last-child) {
+        margin-bottom: 9px;
 }
 
 address {
